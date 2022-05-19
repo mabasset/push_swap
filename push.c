@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mabasset <mabasset@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mabasset <mabasset@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 15:20:57 by mabasset          #+#    #+#             */
-/*   Updated: 2022/02/27 01:21:00 by mabasset         ###   ########.fr       */
+/*   Updated: 2022/03/24 18:57:42 by mabasset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_push(int *ar_1, int *ar_2, int *size_1, int *size_2)
 {
 	int	i;
 
+	if (*size_1 == 0)
+		ft_error();
 	i = *size_2;
 	while (i > 0)
 	{
